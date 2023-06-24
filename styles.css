@@ -1,0 +1,240 @@
+@import url(./assets/navBar.css);
+@import url(./assets/carrossel.css);
+@import url(./assets/categorias.css);
+@import url(./assets/destaques.css);
+@import url(./assets/facilidades.css);
+@import url(./assets/newsLetter.css);
+@import url(./assets/footer.css);
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --mainFont: 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--mainFont);
+}
+
+@media screen and (min-width: 768px) {
+
+    .navBar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    .navBar__logo {
+        padding: 0;
+    }
+
+    .icone {
+        display: none;
+    }
+
+    .pesquisa {
+        display: none;
+    }
+
+    #pesquisa {
+        display: none;
+    }
+
+    .btnSearch {
+        display: none;
+    }
+
+    .navBar__links {
+        display: inline-block;
+    }
+
+    .navBar__link {
+        display: inline-block;
+        text-decoration: none;
+        color: #FFFFFF;
+        padding-left: .5rem;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    
+    .navBar__pesquisa {
+        display: inline-block;
+    }
+
+    .navBar__pesquisa input {
+        background-color: #FFFFFF;
+        height: 38px;
+        margin-left: 1.5rem;
+    }
+
+    #navBar__pesquisa {
+        border: solid 2px #FFFFFF;
+    }
+
+    #navBar__pesquisa::placeholder {
+        color: #6C757D;
+        padding: 3rem 1rem;
+        font-weight: 400;
+        font-size: 13px;
+    }
+
+    .btnNavBar {
+        background-color: transparent;
+        border: solid 1px #FFFFFF;
+        color: #FFFFFF;
+        padding: .8rem;
+        margin: .5rem;
+    }
+
+    .imgMarca {
+        content: url('./Assets projeto _ Loja Meteora/Tablet/tablet1.png');
+    }
+
+    .categorias__secoes {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        margin-left: 0;
+    }
+
+    .destaques {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        margin: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .destaques__produtos {
+        margin: 1rem;
+        width: 330px;
+    }
+
+    .facilidades__img {
+        margin-left: 17rem;
+        padding: 2rem 0;
+    }
+
+    .facilidades__disponiveis {
+        display: grid;
+        grid-template-rows: max-content;
+    }
+
+    .facilidades__opcoes {
+        margin-left: 1rem;
+        padding: 0.5rem 3rem 0.5rem 0;
+    }
+
+    .facilidades__opcoes p {
+        margin-right: 6.3rem;
+    }
+
+    .newsLetter {
+        padding: 1rem 5rem 1rem 5rem;
+    }
+
+    .newsLetter p {
+        font-size: 20px;
+    }
+
+    .newsLetter input {
+        width: 336px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+}
+
+@media screen and (min-width: 1440px) {
+    
+    .carrossel {
+        margin-top: -1rem;
+    }
+
+    .imgMarca {
+        content: url('./Assets projeto _ Loja Meteora/Desktop/Desktop1.png');
+    }
+
+    .navBar__link {
+        font-size: 16px;
+        padding-left: 3rem;
+    }
+
+    .secoes {
+        width: 1110px;
+    }
+
+    .secoes img {
+        width: 160px;
+        padding-right: 1.5rem;
+    }
+
+    .secoes p {
+        width: 160px;
+    }
+
+    .categorias__busca h3{
+        margin: 4rem 0 2rem 0;
+    }
+
+    .categorias__secoes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0 5rem 0 26rem;
+        width: 1110px;
+    }
+
+    .bombando h3 {
+        margin: 3rem 0 0 0;
+    }
+
+    .destaques {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        margin: 0 6.5rem 1rem 15rem;
+        padding-bottom: 1rem;
+    }
+
+    .destaques__produtos {
+        margin: 1rem;
+        width: 350px;
+    }
+
+    .facilidades__disponiveis {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0 15rem 0 20rem;
+    }
+
+    .facilidades__img {
+        margin-left: 0rem;
+    }
+
+    .facilidades__opcoes {
+        padding-right: 0;
+    }
+
+    .facilidades__opcoes p {
+        margin-right: -3rem;
+    }
+
+    .newsLetter {
+        padding: 1rem 5rem 1rem 5rem;
+        margin: 5rem 32rem 5rem 32rem;
+    }
+
+    .newsLetter input {
+        margin-right: -14rem;
+    }
+}
