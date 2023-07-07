@@ -145,6 +145,7 @@ body a {
         justify-content: center;
         margin: 2rem;
         padding-bottom: 1rem;
+        justify-items: center;
     }
 
     .destaques__produtos {
@@ -224,7 +225,7 @@ body a {
     }
     
     .destaques {
-        margin-left: 7rem;
+        margin-left: 2.5rem;
     }
 
     .facilidades__img {
