@@ -17,11 +17,12 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        margin: 2rem;
+        margin: 2rem 1rem;
     }
     
     .enviar input {
         padding: .5rem;
+        width: 70%;
     }
     
     .enviar::placeholder {
