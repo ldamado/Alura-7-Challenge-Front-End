@@ -5,10 +5,13 @@
 @import url(./assets/facilidades.css);
 @import url(./assets/newsLetter.css);
 @import url(./assets/footer.css);
+@import url(./assets/produtos.css);
+@import url(./assets/confirmacao.css);
 
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -19,14 +22,31 @@ body {
     font-family: var(--mainFont);
 }
 
+body a {
+    text-decoration: none;
+}
+
 @media screen and (min-width: 768px) {
 
+    .hamburger {
+        display: none;
+    }
+    
     .navBar {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 1rem 2rem;
+        padding: .5rem 1rem;
+    }
+
+    .navBar__menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style: none;
+        margin-bottom: 0;
+        padding-left: .5rem;
     }
 
     .navBar__logo {
@@ -63,13 +83,18 @@ body {
     }
     
     .navBar__pesquisa {
-        display: inline-block;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        margin-left: -2rem;
     }
 
     .navBar__pesquisa input {
         background-color: #FFFFFF;
-        height: 38px;
+        height: 50px;
         margin-left: 1.5rem;
+        width: 45%;
     }
 
     #navBar__pesquisa {
@@ -91,8 +116,20 @@ body {
         margin: .5rem;
     }
 
-    .imgMarca {
-        content: url('./Assets projeto _ Loja Meteora/Tablet/tablet1.png');
+    .carrossel {
+        margin-top: -.1rem;
+    }
+
+    .carousel-img1 {
+        content: url("./Assets projeto _ Loja Meteora/Tablet/tablet1.png");
+    }
+
+    .carousel-img2 {
+        content: url("./Assets projeto _ Loja Meteora/Tablet/tablet2.png");
+    }
+
+    .carousel-img3 {
+        content: url("./Assets projeto _ Loja Meteora/Tablet/tablet3.png");
     }
 
     .categorias__secoes {
@@ -145,25 +182,145 @@ body {
     .newsLetter input {
         width: 336px;
     }
+
+    .carousel-caption {
+        top: 36%;
+    }
+
+    .caption-2 {
+        margin-left: 11rem;
+    }
+
+    .caption-2 h5 {
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    .caption-2 p {
+        text-align: end;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .caption-3 {
+        margin-right: 11rem;
+    }
+
+    .caption-3 h5 {
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    .caption-3 p {
+        text-align: start;
+        font-size: 16px;
+        font-weight: 400;
+    }
 }
 
 @media screen and (min-width: 1024px) {
+    .categorias__secoes {
+        margin-left: 1rem;
+    }
     
+    .destaques {
+        margin-left: 7rem;
+    }
+
+    .facilidades__img {
+        margin-left: 22.5rem;
+    }
+
+    .newsLetter {
+        padding: 1rem 13rem;
+    }
 }
 
 @media screen and (min-width: 1440px) {
     
-    .carrossel {
-        margin-top: -1rem;
+    .navBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    .imgMarca {
-        content: url('./Assets projeto _ Loja Meteora/Desktop/Desktop1.png');
+    .navBar__logo img {
+        content: url("../Alura-7-Challenge-Front-End-main/Assets projeto _ Loja Meteora/Desktop/Logo desktop.png");
+    }
+
+    .navBar__link:hover {
+        color: #DAFF01;
+        transition: 1s;
+    }
+
+    .carrossel {
+        margin-top: -.1rem;
+    }
+
+    .carousel-caption h5 {
+        font-size: 40px;
+    }
+  
+    .caption-2 {
+        margin-left: 40rem;
+    }
+
+    .caption-3 {
+        margin-right: 40rem;
+    }
+
+    .caption-2 h5 {
+        text-align: end;
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .caption-2 p {
+        text-align: end;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .caption-3 h5 {
+        text-align: start;
+        font-size: 48px;
+        font-weight: 500;
+    }
+
+    .caption-3 p {
+        text-align: start;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .carousel-img1 {
+        content: url("./Assets projeto _ Loja Meteora/Desktop/Desktop1.png");
+    }
+
+    .carousel-img2 {
+        content: url("./Assets projeto _ Loja Meteora/Desktop/Desktop2.png");
+    }
+
+    .carousel-img3 {
+        content: url("./Assets projeto _ Loja Meteora/Desktop/Desktop3.png");
     }
 
     .navBar__link {
         font-size: 16px;
         padding-left: 3rem;
+    }
+
+    .navBar__pesquisa {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 0;
+    }
+
+    .navBar__pesquisa input {
+        height: 50px;
+        width: fit-content;
     }
 
     .secoes {
@@ -172,7 +329,7 @@ body {
 
     .secoes img {
         width: 160px;
-        padding-right: 1.5rem;
+        padding-right: 0;
     }
 
     .secoes p {
@@ -188,7 +345,7 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-        margin: 0 5rem 0 26rem;
+        margin: 0 5rem 0 25.5rem;
         width: 1110px;
     }
 
